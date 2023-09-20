@@ -1,31 +1,38 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-void Maxsum(int n[], int length) {
-  int sum = 0;
-  int sumin = 0;
-  int sumout = 0;
-  for (int i = 0; i < length; ++i) {
-    for (int j = i; j < length; ++j) {
-      sum = sum + n[j];
-      if (sum > sumout)
-        sumout = sum;
+void longer(vector<char> &s1, vector<char> &s2) {
+    int sum = 0;
+    for (int i = 0; i < s1.size(); ++i) {
+        for (int j = i; j < s2.size(); ++j) {
+            if (s1[i] == s2[j]) {
+                sum++;
+                break;
+            }
+        }
     }
-    if (sumout > sumin)
-      sumin = sumout;
-    sumout = 0;
-    sum = 0;
-  }
-  std::cout << sumin;
+    cout << sum;
 }
+
 int main() {
-  int length;
-  std::cin >> length;
-  int n[length];
-  for (int i = 0; i < length; ++i) {
-    std::cin >> n[i];
-  }
-  Maxsum(n, length);
-  return 0;
+    vector<char> s1, s2;
+    char temp;
+    while (cin >> temp) {
+        s1.push_back(temp);
+        if (cin.peek() == ' ') {
+            break;
+        }
+    }
+    while (cin >> temp) {
+        s2.push_back(temp);
+        if (cin.peek() == '\n') {
+            break;
+        }
+    }
+    if (s1.size() > s2.size())
+        longer(s2, s1);
+    else
+        longer(s1, s2);
 }
