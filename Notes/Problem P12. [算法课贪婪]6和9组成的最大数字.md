@@ -12,7 +12,7 @@
 using namespace std;
 
 void trans(int num) {
-    string num_str = to_string(num);
+    string num_str = to_string(num);//转换int -> string
     for (char & i : num_str) {
         if (i == '6'){
             i = '9';
