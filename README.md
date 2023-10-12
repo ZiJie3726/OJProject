@@ -12,3 +12,6 @@
 [Problem P13. [算法课贪婪]三角形的最大周长](/Notes/Problem%20P13.%20[算法课贪婪]三角形的最大周长.md)
 
 [Problem P14. [算法课蛮力法]种花问题](/Notes/Problem%20P14.%20[算法课蛮力法]种花问题.md)
+
+
+[Problem P15. [算法课贪婪]移掉 K 位数字](/Notes/Problem%20P15.%20[算法课贪婪]移掉%20K%20位数字.md)

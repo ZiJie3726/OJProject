@@ -1,38 +1,38 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
-int largestPerimeter(vector<int>& A) {
-    sort(A.rbegin(), A.rend()); // 降序排序数组
-
-    int maxPerimeter = 0;
-
-    for (int i = 0; i < A.size() - 2; i++) {
-        for (int j = i + 1; j < A.size() - 1; j++) {
-            for (int k = j + 1; k < A.size(); k++) {
-                if (A[i] < A[j] + A[k]) {
-                    // 找到一个满足条件的三角形
-                    maxPerimeter = max(maxPerimeter, A[i] + A[j] + A[k]);
+int MostWater(vector<int> &num) {
+    int s = 0;
+    int ans = 0;
+    for (int i = 0; i < num.size(); ++i) {
+        for (int j = num.size() - 1; j > i; --j) {
+            if (num[i] > num[j]) {
+                if (num[j] * (j - i) > s) {
+                    s = num[j] * (j - i);
+                }
+            } else {
+                if (num[i] * (j - i) > s) {
+                    s = num[i] * (j - i);
                 }
             }
+            if (s > ans)
+                ans = s;
         }
     }
-
-    return maxPerimeter;
+    return ans;
 }
 
 int main() {
-    vector<int> A;
+    vector<int> num;
     int temp;
     while (cin >> temp) {
-        A.push_back(temp);
+        num.push_back(temp);
         if (cin.peek() == '\n') {
             break;
         }
     }
-    int maxPerimeter = largestPerimeter(A);
-    cout << maxPerimeter << endl;
+    cout << MostWater(num);
     return 0;
 }

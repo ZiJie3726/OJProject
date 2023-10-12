@@ -8,7 +8,7 @@
 
 using namespace std;
 
-bool canPlaceFlowers(vector<int> &flowerbed, int n) {
+bool rmnum(vector<int> &flowerbed, int n) {
     int count = 0;
     flowerbed.insert(flowerbed.begin(), 0);//在首尾加入0方便比较
     flowerbed.insert(flowerbed.end(), 0);
@@ -31,7 +31,7 @@ int main() {
         }
     }
     cin >> n;
-    if (canPlaceFlowers(flowerbed, n)) {
+    if (rmnum(flowerbed, n)) {
         cout << "ture";
     } else
         cout << "false";
