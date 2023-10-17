@@ -36,3 +36,19 @@
 [Problem P16. [算法课贪婪]盛最多的水](/Notes/Problem%20P16.%20[算法课贪婪]盛最多的水.md)
 
 [Problem P17. [算法课回溯]括号生成](/Notes/Problem%20P17.%20[算法课回溯]括号生成.md)
+
+[Problem P18. [算法课回溯]目标和](/Notes/Problem%20P18.%20[算法课回溯]目标和.md)
+
+[Problem P19. [算法课回溯] 电话号码的字母组合](/Notes/Problem%20P19.%20[算法课回溯]%20电话号码的字母组合.md)
+
+[Problem P20. [算法课回溯]优美的排列](/Notes/Problem%20P20.%20[算法课回溯]优美的排列.md)
+
+[Problem P21. [算法课分支限界法]组合](/Notes/Problem%20P21.%20[算法课分支限界法]组合.md)
+
+[Problem P22. [算法课分支限界法]大礼包](/Notes/Problem%20P22.%20[算法课分支限界法]大礼包.md)
+
+[Problem P23. 计数排序（使用CC++）](/Notes/Problem%20P23.%20计数排序（使用CC++）.md)
+
+[Problem P24. [算法课贪心] 跳跃游戏](/Notes/Problem%20P24.%20[算法课贪心]%20跳跃游戏.md)
+
+[Problem P25. [算法课动态规划] 整数拆分](/Notes/Problem%20P25.%20[算法课动态规划]%20整数拆分.md)
