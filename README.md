@@ -58,3 +58,5 @@
 [Problem P27. [算法课动态规划] 戳气球](/Notes/Problem%20P27.%20[算法课动态规划]%20戳气球.md)
 
 [Problem P28. [算法课贪心] 跳跃游戏](/Notes/Problem%20P28.%20[算法课贪心]%20跳跃游戏.md)
+
+[Problem P29. [算法课指针] 颜色分类](/Notes/Problem%20P29.%20[算法课指针]%20颜色分类.md)
