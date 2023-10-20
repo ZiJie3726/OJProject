@@ -1,6 +1,10 @@
 # Problem P26. [算法课动态规划] 打家劫舍
 
+<<<<<<< HEAD
 ![picture 0](.assets_IMG/Problem%20P26.%20%5B%E7%AE%97%E6%B3%95%E8%AF%BE%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%5D%20%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D/IMG_20231019-143753.png)  
+=======
+![picture 0](.assets_IMG/Problem%20P26.%20%5B%E7%AE%97%E6%B3%95%E8%AF%BE%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%5D%20%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D/IMG_20231018-085005.png)  
+>>>>>>> 46f96605a8e01c5598784b6f6d7faad8f194de6e
 
 这个问题可以通过动态规划来解决。我们可以维护一个数组 `dp`，其中 `dp[i]` 表示在第 `i` 个房屋之前，小偷能够偷窃到的最高金额。动态规划的思路如下：
 
@@ -18,6 +22,7 @@
 以下是使用动态规划的C++代码示例：
 
 ```cpp
+<<<<<<< HEAD
 #include <vector>
 
 using namespace std;
@@ -40,7 +45,70 @@ int rob(vector<int>& nums) {
     }
 
     return dp[n-1];
+=======
+// solution.cpp
+
+#include "solution.h"
+
+int Solution::Rob(vector<int> &nums) {
+  unsigned long n = nums.size();
+  if (n == 0) {
+    return 0;
+  }
+  if (n == 1) {
+    return nums[0];
+  }
+
+  vector<int> dp(n, 0);
+  dp[0] = nums[0];
+  dp[1] = max(nums[0], nums[1]);
+
+  for (int i = 2; i < n; i++) {
+    dp[i] = max(dp[i-2] + nums[i], dp[i-1]);
+  }
+
+  return dp[n-1];
+>>>>>>> 46f96605a8e01c5598784b6f6d7faad8f194de6e
 }
 ```
 
 这个代码使用动态规划来计算小偷在不触动警报装置的情况下能够偷窃到的最高金额。`dp[n-1]` 包含了所有房屋中小偷能够偷窃到的最高金额。动态规划的核心思想是在每个房屋处选择偷窃或不偷窃，然后根据前一步的最高金额来更新当前步的最高金额。最终返回 `dp[n-1]` 即可。
+<<<<<<< HEAD
+=======
+
+```cpp
+// solution.h
+
+#include <vector>
+
+using namespace std;
+
+#ifndef DEBUG__SOLUTION_H_
+#define DEBUG__SOLUTION_H_
+
+class Solution {
+ public:
+  static int Rob(vector<int> &nums);
+};
+
+#endif //DEBUG__SOLUTION_H_
+```
+
+```cpp
+// main.cpp
+
+#include <iostream>
+#include "solution.h"
+
+int main() {
+  vector<int> nums;
+  int temp;
+  while (cin >> temp) {
+    nums.push_back(temp);
+    if (cin.peek() == '\n')
+      break;
+  }
+  cout << Solution::Rob(nums);
+}
+```
+>>>>>>> 46f96605a8e01c5598784b6f6d7faad8f194de6e
