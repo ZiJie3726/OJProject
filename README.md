@@ -56,3 +56,5 @@
 [Problem P26. [算法课动态规划] 打家劫舍](/Notes/Problem%20P26.%20[算法课动态规划]%20打家劫舍.md)
 
 [Problem P27. [算法课动态规划] 戳气球](/Notes/Problem%20P27.%20[算法课动态规划]%20戳气球.md)
+
+[Problem P28. [算法课贪心] 跳跃游戏](/Notes/Problem%20P28.%20[算法课贪心]%20跳跃游戏.md)
