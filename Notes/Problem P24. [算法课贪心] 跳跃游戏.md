@@ -26,7 +26,7 @@ bool canJump(vector<int> &nums) {
   int maxReach = 0; // 记录当前能够到达的最远位置
 
   for (int i = 0; i < nums.size(); i++) {
-	if (i > maxReach) {
+  if (i > maxReach) {
 	  return false; // 如果当前位置超出了最远能够到达的位置，返回false
 	}
 	maxReach = max(maxReach, i + nums[i]); // 更新最远能够到达的位置
