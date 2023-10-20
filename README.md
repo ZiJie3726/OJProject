@@ -52,3 +52,7 @@
 [Problem P24. [算法课贪心] 跳跃游戏](/Notes/Problem%20P24.%20[算法课贪心]%20跳跃游戏.md)
 
 [Problem P25. [算法课动态规划] 整数拆分](/Notes/Problem%20P25.%20[算法课动态规划]%20整数拆分.md)
+
+[Problem P26. [算法课动态规划] 打家劫舍](/Notes/Problem%20P26.%20[算法课动态规划]%20打家劫舍.md)
+
+[Problem P27. [算法课动态规划] 戳气球](/Notes/Problem%20P27.%20[算法课动态规划]%20戳气球.md)
